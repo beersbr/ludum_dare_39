@@ -13,6 +13,7 @@ int main( int argc, char *argv[] )
 	           WINDOW_WIDTH,
 	           WINDOW_HEIGHT);
 
+	
 	while ( game->is_running() ) {
 		game->updateAndRender();
 	}

@@ -1,8 +1,14 @@
 #pragma once
 
-#include <SDL2/sdl.h>
+#ifdef _WIN32
+#include <windows.h>
+#define GL3_PROTOTYPES 1
+#include <GL/glew.h>
+#endif
 
+#include <SDL2/sdl.h>
 #include <iostream>
+
 
 class SDLGame 
 {
